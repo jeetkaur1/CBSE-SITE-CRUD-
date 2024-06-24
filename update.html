@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #5AC3B0;
+;
+        }
+
+        header {
+            background-color: #add8e6;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .txt_field {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        span {
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: black;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input:focus+span,
+        input:valid+span {
+            top: 0;
+            font-size: 12px;
+            color: #555;
+        }
+
+        label {
+            display: none;
+        }
+
+        button {
+            background-color:#add8e6;
+;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Update Student Details</h1>
+    </header>
+
+    <div class="center">
+        <form action="update1" method="post">
+
+            <div class="txt_field">
+                <input type="text" name="rollnumber" required>
+                <span>Roll Number</span>
+            </div>
+
+            <div class="txt_field">
+                <input type="text" name="name" required>
+                <span>Student Name</span>
+            </div>
+
+            <div class="txt_field">
+                <input type="number" name="maths" required>
+                <span>Maths</span>
+            </div>
+
+            <div class="txt_field">
+                <input type="number" name="english" required>
+                <span>English</span>
+            </div>
+
+            <div class="txt_field">
+                <input type="number" name="punjabi" required>
+                <span>Punjabi</span>
+            </div>
+
+            <div class="txt_field">
+                <input type="number" name="science" required>
+                <span>Science</span>
+            </div>
+
+            <input type="submit" value="Update Student">
+
+        </form>
+    </div>
+</body>
+
+</html>

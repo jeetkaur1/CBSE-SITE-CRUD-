@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <title>Registration Page</title> 
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            min-height: 100vh;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            margin: 0;
+            color: #fff;
+        }
+
+        .main {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            transition: transform 0.2s;
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            width: calc(100% - 22px);
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #333;
+        }
+
+        button {
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            background-color: #4CAF50;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head> 
+
+<body> 
+    <div class="main"> 
+        <h1>Login Page</h1> 
+        <h3>Enter your Details</h3> 
+        <form action=""> 
+            <label for="first"> 
+                Username: 
+            </label> 
+            <input type="text"
+                id="first"
+                name="first"
+                placeholder="Enter your Username" required> 
+
+            <label for="password"> 
+                Password: 
+            </label> 
+            <input type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your Password" required> 
+
+            <div class="wrap"> 
+                <button type="submit">Submit</button> 
+            </div> 
+        </form> 
+        <p>Don't have an account? 
+            <a href="#" style="text-decoration: none;">SignUp</a> 
+        </p> 
+    </div> 
+</body> 
+
+</html>
