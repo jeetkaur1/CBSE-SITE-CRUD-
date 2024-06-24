@@ -1,4 +1,4 @@
-# CBSE-SITE-CRUD-OPERAtIONS
+# CBSE-SITE-CRUD-OPERATIONS
 
 ## Project Description
 
